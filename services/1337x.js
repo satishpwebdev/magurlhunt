@@ -44,7 +44,6 @@ const torrent1337 = async (query, page = 1) => {
   const url = `https://www.1337x.to/search/${query}/${page}/`;
   try {
     const htmlData = await axiosInstance.get(url);
-    console.log("htmldata", htmlData);
     const $ = cheerio.load(htmlData.data);
     const links = $("td.name")
       .map((_, element) => {
