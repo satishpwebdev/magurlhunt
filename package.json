@@ -6,7 +6,7 @@
    "scripts": {
       "start": "node server.js",
       "build": "npm install"
-    },
+   },
    "author": "satish",
    "license": "ISC",
    "dependencies": {

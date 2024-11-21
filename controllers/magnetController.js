@@ -1,6 +1,5 @@
 const Controller = require("./controller");
 const torren1337 = require("../services/1337x");
-// const torren1337 = require("../services/1337_x");
 const bitSearch = require("../services/bitSearch");
 const torLock = require("../services/torlock");
 const torProject = require("../services/torproject");
@@ -56,7 +55,7 @@ class MagnetController extends Controller {
 
       combinedResults.sort((a, b) => b.seeders - a.seeders);
 
-      const top30Results = combinedResults.slice(0, 30);
+      const top30Results = combinedResults.slice(0, 20);
 
       this.sendResponse(top30Results);
     } catch (error) {
