@@ -14,7 +14,7 @@ app.use('/seedr', SeedrRouter);
 // app.use('/', Routes)
 
 app.get('/',(req,res)=>{
-   console.log(Routes)
+   // console.log(Routes)
    res.send("Radhe Radhe !!")
 })
 
