@@ -1,3 +1,10 @@
-const MagnetRouter = require("./magRoute");
+// const MagnetRouter = require("./magRoute");
 
-module.exports = MagnetRouter;
+// module.exports = MagnetRouter;
+
+
+const MagnetRouter = require("./magRoute");
+const SeedrRouter = require("./seedrRoute");
+
+module.exports = { MagnetRouter, SeedrRouter };
+
